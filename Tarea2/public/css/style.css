@@ -1,0 +1,208 @@
+/* ── Reset y base ── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ── Navegación ── */
+nav {
+  background: #1a1a2e;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #4fc3f7;
+}
+
+/* ── Header ── */
+header {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  color: #4fc3f7;
+  font-size: 1.1rem;
+}
+
+/* ── Main y secciones ── */
+main {
+  max-width: 860px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+section h2 {
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  border-left: 4px solid #4fc3f7;
+  padding-left: 0.75rem;
+}
+
+section p, section li {
+  color: #555;
+}
+
+/* ── Tags ── */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.tags li {
+  background: #e3f2fd;
+  color: #1565c0;
+  padding: 0.35rem 0.85rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ── Proyectos ── */
+.proyecto {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.proyecto h3 {
+  color: #1a1a2e;
+  margin-bottom: 0.4rem;
+}
+
+/* ── Formulario ── */
+.campo {
+  margin-bottom: 1.2rem;
+}
+
+.campo label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+  color: #333;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  border-color: #4fc3f7;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button[type="submit"]:hover {
+  background: #4fc3f7;
+  color: #1a1a2e;
+}
+
+/* ── Confirmación ── */
+#confirmacion {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.confirmacion-box .icono {
+  font-size: 4rem;
+}
+
+.confirmacion-box h1 {
+  margin: 1rem 0 0.5rem;
+  color: #1a1a2e;
+}
+
+.confirmacion-box p {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background: #1a1a2e;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #4fc3f7;
+  color: #1a1a2e;
+}
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #999;
+  font-size: 0.9rem;
+}
+
+/* ── Links ── */
+a {
+  color: #1565c0;
+}
+
+section ul:not(.tags) {
+  padding-left: 1.5rem;
+}
+
+section ul:not(.tags) li {
+  margin-bottom: 0.5rem;
+}

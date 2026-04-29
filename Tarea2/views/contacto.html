@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <nav>
+    <a href="/">Inicio</a>
+    <a href="/contacto">Contacto</a>
+  </nav>
+
+  <header>
+    <h1>Contáctame</h1>
+    <p class="subtitulo">Llena el formulario y me pondré en contacto contigo</p>
+  </header>
+
+  <main>
+    <section id="formulario">
+
+      <!-- Action apunta directo a FormSubmit con tu correo -->
+      <form action="https://formsubmit.co/TU_CORREO_AQUI" method="POST">
+
+        <!-- Redirige a tu ruta de confirmación después del envío -->
+        <input type="hidden" name="_next" value="http://localhost:3000/confirmacion" />
+        <!-- Desactiva el captcha de FormSubmit -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="name" placeholder="Tu nombre completo" required />
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="email" placeholder="tuemail@ejemplo.com" required />
+        </div>
+
+        <div class="campo">
+          <label for="asunto">Asunto</label>
+          <input type="text" id="asunto" name="subject" placeholder="Motivo del mensaje" />
+        </div>
+
+        <div class="campo">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tu Nombre — Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
